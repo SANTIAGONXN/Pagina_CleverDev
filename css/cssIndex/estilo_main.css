@@ -406,23 +406,3 @@
 .contenidoImagen img:hover {
     transform: scale(1.05);
 }
-
-/* Diseño responsivo */
-/* Primer Rango */
-@media (max-width: 600px) {
-
-    /* SECCIÓN "HERO" */
-
-    .textContenidoHero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .fraseDescriptivaContenidoHero {
-        padding-bottom: 10px;
-    }
-}
