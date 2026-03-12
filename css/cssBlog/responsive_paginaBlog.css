@@ -1,0 +1,28 @@
+/* Diseño responsivo */
+/* Contenido de pgina Blog */
+/* Primer Rango */
+@media (max-width: 600px) {
+
+    /* SECCIÓN DESCRIPCIÓN BLOG */
+    .contenidoDescripcionBlog {
+        grid-template-columns: 1fr;
+
+    }
+
+    .contenidoImagenBlog img {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    /* SECCION DE BLOQUES BLOG */
+
+.BloquesBlog {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.contenidoImgBloque  {
+    padding: 10px;
+}
+}
+
