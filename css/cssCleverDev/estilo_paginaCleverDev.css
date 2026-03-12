@@ -3,6 +3,27 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root {
+    --funte-titulo-1: titulo1;
+    --fuente-parrafo1: parrafo;
+    --fuente-frase-titulo: 'Montserrat', sans-serif;
+    --color-fondo-body: rgb(14, 14, 14);
+    --color-titulo-naranja: rgb(224, 78, 15);
+    --color-titulo-parrafo1: rgb(139, 136, 136);
+
+}
+
+/* FUENTES */
+@font-face {
+    font-family: titulo1;
+    src: url(../../fuentes/inicio/Roboto/static/Roboto-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: parrafo;
+    src: url(../../fuentes/inicio/Open_sans/static/OpenSans-Medium.ttf);
+}
+
 /* SECCIÓN "HERO" */
 .hero {
     display: flex;
@@ -45,31 +66,23 @@
     padding-right: 60px;
 }
 
+.tituloContenidoHero {
+    margin-bottom: 50px;
+}
+
 .tituloContenidoHero h1 {
     text-align: center;
     font-family: var(--funte-titulo-1);
     font-size: 60px;
     color: rgba(255, 255, 255);
-    line-height: 60px;
 }
 
-.tituloContenidoHero {
-    margin-bottom: 50px;
-}
-
-.descripcionContenidoHero {
-    margin-bottom: 30px;
-}
-
-.descripcionContenidoHero p {
+.tituloContenidoHero h2 {
     text-align: center;
-    font-family: var(--fuente-parrafo1);
-    font-size: 22px;
-    color: white;
-}
-
-.fraseDescriptivaContenidoHero h3 {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
     font-family: var(--funte-titulo-1);
+    font-size: 25px;
+    color: rgba(255, 255, 255);
+}
+.resaltado{
+    color: var(--color-titulo-naranja);
 }
