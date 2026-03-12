@@ -2,5 +2,12 @@
 /* Contenido Pie de pagina-footer */
 /* Primer Rango */
 @media (max-width: 600px) {
+/* PIE DE PAGINA */
+/* Sección Proyectos y ubicaciones de sedes */
 
+.locationsProyects {
+    /* container principal seccion proyectos y ubiicaciones */
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+}
 }
