@@ -1,0 +1,69 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --fuente-menu-navegacion-principal: menuNavPrincipal;
+}
+
+@font-face {
+    font-family: menuNavPrincipal;
+    src: url(../../fuentes/inicio/Open_sans/static/OpenSans-Medium.ttf);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2.6fr;
+    min-height: 140px;
+    place-items: center;
+    /* background-color: rgb(145, 164, 157); */
+    /* COLOR INTERESANTE GRIS */
+    background-color: rgb(9, 9, 9);
+    padding-right: 50px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3); /* sombra debajo */
+
+
+
+    /* lo siguiente hace que el encabezado se fije al hacer scroll */
+    position: sticky;
+    top: 0;
+    /* lo fija en la parte superior */
+    z-index: 1000;
+    /* asegura que quede encima del contenido */
+
+
+    img {
+        height: 115px;
+    }
+}
+
+header nav {
+    justify-self: end;
+
+    a {
+        text-decoration: none;
+        color: rgb(200, 191, 191);
+        /* Color base de los enlaces del menú */
+        font-weight: 300;
+        font-size: 22px;
+        margin-left: 50px;
+        transition: all 0.2s;
+        padding: 12px;
+        font-family: var(--fuente-menu-navegacion-principal);
+
+    }
+
+    a:hover {
+        border-radius: 5px;
+        border: 2px solid white;
+        color: rgba(255, 115, 21);
+        cursor: pointer;
+
+    }
+}
+
+header ul {
+    list-style: none;
+}

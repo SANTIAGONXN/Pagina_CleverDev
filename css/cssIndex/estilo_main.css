@@ -1,0 +1,408 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --funte-titulo-1: titulo1;
+    --fuente-parrafo1: parrafo;
+    --fuente-frase-titulo: 'Montserrat', sans-serif;
+    --color-fondo-body: rgb(14, 14, 14);
+    --color-titulo-naranja: rgb(224, 78, 15);
+    --color-titulo-parrafo1: rgb(139, 136, 136);
+
+}
+
+/* FUENTES */
+@font-face {
+    font-family: titulo1;
+    src: url(../../fuentes/inicio/Roboto/static/Roboto-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: parrafo;
+    src: url(../../fuentes/inicio/Open_sans/static/OpenSans-Medium.ttf);
+}
+
+
+/* SECCIÓN "HERO" */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 610px;
+    overflow: hidden;
+    /* Para que el pseudo-elemento no se salga */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Configuración imagen */
+    background-image: url(../../images/inicio/hero/ImagenBienvenidaInicio.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Manda la imagen detrás del contenido */
+
+    /* Modificaciones */
+    opacity: 0.9;
+    /* Control de la transparencia */
+    /* filter:grayscale(100%); */
+    /* LE pone como un gris */
+    filter: brightness(30%);
+}
+
+.textContenidoHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.tituloContenidoHero h1 {
+    text-align: center;
+    font-family: var(--funte-titulo-1);
+    font-size: 60px;
+    color: rgba(255, 255, 255);
+    line-height: 60px;
+}
+
+.tituloContenidoHero {
+    margin-bottom: 50px;
+}
+
+.descripcionContenidoHero {
+    margin-bottom: 30px;
+}
+
+.descripcionContenidoHero p {
+    text-align: center;
+    font-family: var(--fuente-parrafo1);
+    font-size: 22px;
+    color: white;
+}
+
+.fraseDescriptivaContenidoHero h3 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: var(--funte-titulo-1);
+}
+
+/* SECCIÓN SERVICIOS */
+.encabezadoServicios {
+    background-color: var(--color-fondo-body);
+    height: auto;
+    width: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.encabezadoServicios h1 {
+    color: var(--color-titulo-naranja);
+    font-family: var(--funte-titulo-1);
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.encabezadoServicios h2 {
+    color: var(--color-titulo-parrafo1);
+    font-family: var(--fuente-parrafo1);
+    font-size: 20px;
+    font-family: var(--fuente-frase-titulo);
+    font-weight: 300;
+}
+
+/* contenido Servicios */
+
+.serviciosprincipales {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    gap: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: var(--color-fondo-body);
+    z-index: 0;
+    position: relative;
+    /* Para que el color de fondo quede detras */
+
+}
+
+.serviciosSecundarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    border-bottom: 30px solid var(--color-fondo-body);
+    background-color: var(--color-fondo-body);
+    z-index: 0;
+    position: relative;
+    /* Para que el color de fondo quede detras */
+}
+
+/* apliacdo a todos los servicios  */
+.desarrolloCodigoSeguro_servicio,
+.desarrolloSoftware_servicio,
+.desarrolloApliacionesWeb_servicio,
+.desarrolloApi_Servicio,
+.desarrolloAplicMoviles_servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-end; */
+    /* Empuja el contenido hacia abajo */
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    overflow: hidden;
+
+}
+
+/* modificaciones contenido servicios */
+/* apliacdo a todos los servicios  */
+.desarrolloCodigoSeguro_servicio h2,
+.desarrolloSoftware_servicio h2,
+.desarrolloApliacionesWeb_servicio h2,
+.desarrolloApi_Servicio h2,
+.desarrolloAplicMoviles_servicio h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* apliacdo a todos los servicios  */
+.desarrolloCodigoSeguro_servicio a,
+.desarrolloSoftware_servicio a,
+.desarrolloApliacionesWeb_servicio a,
+.desarrolloApi_Servicio a,
+.desarrolloAplicMoviles_servicio a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.2s;
+    padding: 9px;
+}
+
+/* apliacdo a todos los servicios  */
+/* efecto"ver mas" */
+.desarrolloCodigoSeguro_servicio a:hover,
+.desarrolloSoftware_servicio a:hover,
+.desarrolloApliacionesWeb_servicio a:hover,
+.desarrolloApi_Servicio a:hover,
+.desarrolloAplicMoviles_servicio a:hover {
+    background-color: rgb(14, 13, 14);
+    color: white;
+    /* color: rgb(255, 255, 255); */
+    cursor: pointer;
+}
+
+/* Servicio1 */
+.desarrolloCodigoSeguro_servicio::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Configuración imagen */
+    background-image: url(../../images/inicio/servicios/desarrolloCodigoSeguro.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: -1;
+    /* Manda la imagen detrás del contenido */
+
+    /* Modificaciones */
+    opacity: 0.6;
+    /* Control de la transparencia */
+    /* filter:grayscale(100%); */
+    /* LE pone como un gris */
+    /* filter: brightness(30%); */
+}
+
+/* Servicio2 */
+.desarrolloApliacionesWeb_servicio::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Configuración imagen */
+    background-image: url(../../images/inicio/servicios/desarrolloApliacionesWeb.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: -1;
+    /* Manda la imagen detrás del contenido */
+
+    /* Modificaciones */
+    opacity: 0.9;
+    /* Control de la transparencia */
+    /* filter:grayscale(100%); */
+    /* LE pone como un gris */
+    /* filter: brightness(98%); */
+}
+
+/* Servicio3 */
+.desarrolloSoftware_servicio::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Configuración imagen */
+    background-image: url(../../images/inicio/servicios/desarrolloSoftware.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: -1;
+    /* Manda la imagen detrás del contenido */
+
+    /* Modificaciones */
+    opacity: 0.9;
+    /* Control de la transparencia */
+    /* filter:grayscale(100%); */
+    /* LE pone como un gris */
+    filter: brightness(60%);
+}
+
+
+
+/* Servicio4 */
+.desarrolloApi_Servicio::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Configuración imagen */
+    background-image: url(../../images/inicio/servicios/desarrolloApi.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: -1;
+    /* Manda la imagen detrás del contenido */
+
+    /* Modificaciones */
+    opacity: 0.8;
+    /* Control de la transparencia */
+    /* filter:grayscale(100%); */
+    /* LE pone como un gris */
+    /* filter: brightness(98%); */
+}
+
+/* Servicio5 */
+.desarrolloAplicMoviles_servicio::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Configuración imagen */
+    background-image: url(../../images/inicio/servicios/desarrolloAplicMoviles.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: -1;
+    /* Manda la imagen detrás del contenido */
+
+    /* Modificaciones */
+    opacity: 0.8;
+    /* Control de la transparencia */
+    /* filter:grayscale(100%); */
+    /* LE pone como un gris */
+    /* filter: brightness(98%); */
+}
+
+/* Efecto oscurecer  imagen servicios */
+/* Seleccion de todos los contenedores de servicio para el efecto hover */
+.desarrolloCodigoSeguro_servicio:hover::before,
+.desarrolloSoftware_servicio:hover::before,
+.desarrolloApliacionesWeb_servicio:hover::before,
+.desarrolloApi_Servicio:hover::before,
+.desarrolloAplicMoviles_servicio:hover::before {
+    filter: brightness(40%);
+    /* Ajuste de que tan oscuro */
+    transition: filter 0.3s ease;
+    /* Para que el cambio sea suave */
+
+    /* Los servicios ya tienen ::before entonces no es necsario crear nuevamente */
+}
+
+/* SECCIÓN DESCRIPCIÓN EMPRESA */
+.contenidoDescripcionEmpresa {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* background-color: #121212; */
+    background-color: var(--color-fondo-body);
+    place-items: center;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 25px;
+    border-bottom: 30px solid var(--color-fondo-body);
+}
+
+.tituloContenidoText h1 {
+    font-family: var(--funte-titulo-1);
+    color: var(--color-titulo-naranja);
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.fraseContenidoText {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fraseContenidoText h2 {
+    font-family: var(--fuente-parrafo1);
+    color: var(--color-titulo-parrafo1);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.parrafoContenidoText {
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoContenidoText p {
+    color: white;
+    font-family: var(--fuente-parrafo1);
+}
+
+.contenidoImagen img {
+    height: 300px;
+    background-size: cover;
+    border-radius: 50%;
+
+    /* Efecto escala imagen */
+    box-shadow: 0 8px 20px rgba(181, 171, 171, 0.2);
+    /* añade una sombra alrededor del marco de un elemento */
+    transition: transform 0.6s ease;
+}
+
+.contenidoImagen img:hover {
+    transform: scale(1.05);
+}
