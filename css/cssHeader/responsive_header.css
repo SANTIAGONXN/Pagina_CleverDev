@@ -1,0 +1,54 @@
+/* Diseño responsivo */
+/* Contenido Menu */
+/* Primer Rango */
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+        /* Ajustamos las columnas */
+        padding-right: 20px;
+        min-height: 100px;
+    }
+
+    header img {
+        height: 80px;
+    }
+
+    .icon-menu {
+        display: flex;
+        justify-self: end;
+        /* Se muestra el hamburguesa */
+    }
+
+    header nav {
+        position: relative;
+        grid-column: 1 / span 2; /* Hace que el menú ocupe las dos columnas */
+        width: 100%;
+        justify-self: center;
+        max-height: 0; /* hace que s eesconda el nav */
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        justify-self: center;
+    }
+
+    /* probar */
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    header nav a {
+        margin: 10px 0;
+        width: 80%;
+        text-align: center;
+    }
+    /* PUNTO CLAVE: Si el check está activo, expande el nav */
+    #btn-menu:checked ~ nav {
+        max-height: 450px; /* Ajusta según el largo de tu menú */
+    }
+
+    #btn-menu:checked ~ .icon-menu span:nth-child(1) { transform: rotate(45deg) translate(8px, 6px); }
+    #btn-menu:checked ~ .icon-menu span:nth-child(2) { opacity: 0; }
+    #btn-menu:checked ~ .icon-menu span:nth-child(3) { transform: rotate(-45deg) translate(8px, -6px); }
+}

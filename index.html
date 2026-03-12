@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/cssFooter/estilo_footer.css">
     <link rel="stylesheet" href="./css/cssIndex/responsive_main.css">
     <link rel="stylesheet" href="./css/cssFooter/responsive_footer.css">
+    <link rel="stylesheet" href="./css/cssHeader/responsive_header.css">
     <link rel="shortcut icon" href="./iconos/favicon.ico" type="image/x-icon"> <!-- Icono-pestaña -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Fuente -->
@@ -21,19 +22,28 @@
 
 <body>
     <header>
-        <img src="./images/header/logo/logoV3.png" alt="" />
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                    <a href="">Servicios</a>
-                    <a href="./paginas/cleverDev.html">CleverDev</a>
-                    <a href="./paginas/pagina_blog.html">Blog</a>
-                    <a href="">Soporte</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <img src="./images/header/logo/logoV3.png" alt="Logo" />
+
+    <input type="checkbox" id="btn-menu">
+    
+    <label for="btn-menu" class="icon-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+                <a href="">Servicios</a>
+                <a href="./paginas/cleverDev.html">CleverDev</a>
+                <a href="./paginas/pagina_blog.html">Blog</a>
+                <a href="">Soporte</a>
+            </li>
+        </ul>
+    </nav>
+</header>
     <main>
         <section class="hero">
             <div class="textContenidoHero">

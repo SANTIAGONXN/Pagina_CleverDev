@@ -67,3 +67,21 @@ header nav {
 header ul {
     list-style: none;
 }
+
+/* MENU HAMBURGUESA */
+
+#btn-menu { display: none; } /* se escoonde  el checkbox */
+.icon-menu {
+    display: none; /* Escondido en PC */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.icon-menu span{
+    width: 35px;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
