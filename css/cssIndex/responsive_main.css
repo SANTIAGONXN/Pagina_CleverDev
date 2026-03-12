@@ -16,4 +16,40 @@
     .fraseDescriptivaContenidoHero {
         padding-bottom: 10px;
     }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+/* SECCIÓN SERVICIOS */
+.encabezadoServicios {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* contenido Servicios */
+
+.serviciosprincipales {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.serviciosSecundarios {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* SECCIÓN DESCRIPCIÓN EMPRESA */
+.contenidoDescripcionEmpresa {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 22px;
+}
+
+.contenidoImagen {
+    margin-top: 20px;
 }
