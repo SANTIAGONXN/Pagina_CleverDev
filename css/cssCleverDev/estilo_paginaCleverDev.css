@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* SECCIÓN "HERO" */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 610px;
+    overflow: hidden;
+    /* Para que el pseudo-elemento no se salga */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Configuración imagen */
+    background-image: url(../../images/paginas/cleverDev/hero/imagenBienvenidaCleverDev.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* Manda la imagen detrás del contenido */
+
+    /* Modificaciones */
+    opacity: 0.9;
+    /* Control de la transparencia */
+    /* filter:grayscale(100%); */
+    /* LE pone como un gris */
+    filter: brightness(30%);
+}
+
+.textContenidoHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.tituloContenidoHero h1 {
+    text-align: center;
+    font-family: var(--funte-titulo-1);
+    font-size: 60px;
+    color: rgba(255, 255, 255);
+    line-height: 60px;
+}
+
+.tituloContenidoHero {
+    margin-bottom: 50px;
+}
+
+.descripcionContenidoHero {
+    margin-bottom: 30px;
+}
+
+.descripcionContenidoHero p {
+    text-align: center;
+    font-family: var(--fuente-parrafo1);
+    font-size: 22px;
+    color: white;
+}
+
+.fraseDescriptivaContenidoHero h3 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: var(--funte-titulo-1);
+}
