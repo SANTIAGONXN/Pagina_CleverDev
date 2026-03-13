@@ -1,7 +1,7 @@
 /* Diseño responsivo */
 /* Contenido de pgina Blog */
 /* Primer Rango */
-@media (max-width: 600px) {
+@media (max-width: 620px) {
 
     /* SECCIÓN DESCRIPCIÓN BLOG */
     .contenidoDescripcionBlog {
@@ -16,17 +16,63 @@
 
     /* SECCION DE BLOQUES BLOG */
 
-.BloquesBlog {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    .BloquesBlog {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contenidoImgBloque {
+        padding: 10px;
+    }
+
+    .contenidoImgBloque img {
+        border-radius: 10px;
+
+    }
 }
 
-.contenidoImgBloque  {
-    padding: 10px;
-}
-.contenidoImgBloque img {
-    border-radius: 10px;
-    
-}
+/* Segundo Rango */
+@media(min-width:621px) and (max-width:900px) {
+
+    /* SECCIÓN DESCRIPCIÓN BLOG */
+    .contenidoDescripcionBlog {
+        grid-template-columns: 1fr;
+
+    }
+
+    .contenidoImagenBlog img {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    /* SECCION DE BLOQUES BLOG */
+
+    .BloquesBlog {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .BloquesBlog div:last-child {
+        grid-column: 1 / span 2;
+    }
+
+    .contenidoImgBloque {
+        padding: 10px;
+    }
+
+    .contenidoImgBloque img {
+        border-radius: 10px;
+
+    }
 }
 
+/* Segundo Rango */
+@media(min-width:2001px) {
+
+    .BloquesBlog,
+    .contenidoDescripcionBlog {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+}
