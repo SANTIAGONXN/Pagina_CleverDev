@@ -1,6 +1,7 @@
 /* Diseño responsivo */
 /* Contenido Inicio */
 /* Primer Rango */
+
 @media (max-width: 600px) {
 
     /* SECCIÓN "HERO" */
@@ -13,7 +14,7 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-}
+
 
 .tituloContenidoHero{
     margin-top: 20px;
@@ -57,4 +58,5 @@
 
 .contenidoImagen {
     margin-top: 20px;
+}
 }
