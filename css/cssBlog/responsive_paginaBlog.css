@@ -24,5 +24,9 @@
 .contenidoImgBloque  {
     padding: 10px;
 }
+.contenidoImgBloque img {
+    border-radius: 10px;
+    
+}
 }
 

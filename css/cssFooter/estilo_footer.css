@@ -165,6 +165,9 @@
 }
 
 .botonesConoceMas a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: black;
     border: 1px solid black;
