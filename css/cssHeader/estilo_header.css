@@ -50,7 +50,7 @@ header nav {
         font-size: 22px;
         margin-left: 50px;
         transition: all 0.2s;
-        padding: 12px;
+        padding: 10px;
         font-family: var(--fuente-menu-navegacion-principal);
 
     }

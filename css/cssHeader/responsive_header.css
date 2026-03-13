@@ -1,7 +1,7 @@
 /* Diseño responsivo */
 /* Contenido Menu */
 /* Primer Rango */
-@media (max-width: 600px) {
+@media (max-width: 940px) {
     header {
         grid-template-columns: 1fr 1fr;
         /* Ajustamos las columnas */
@@ -21,10 +21,12 @@
 
     header nav {
         position: relative;
-        grid-column: 1 / span 2; /* Hace que el menú ocupe las dos columnas */
+        grid-column: 1 / span 2;
+        /* Hace que el menú ocupe las dos columnas */
         width: 100%;
         justify-self: center;
-        max-height: 0; /* hace que s eesconda el nav */
+        max-height: 0;
+        /* hace que s eesconda el nav */
         overflow: hidden;
         transition: all 0.4s ease-in-out;
         justify-self: center;
@@ -43,12 +45,34 @@
         width: 80%;
         text-align: center;
     }
+
     /* PUNTO CLAVE: Si el check está activo, expande el nav */
-    #btn-menu:checked ~ nav {
-        max-height: 450px; /* Ajusta según el largo de tu menú */
+    #btn-menu:checked~nav {
+        max-height: 450px;
+        /* Ajusta según el largo de tu menú */
     }
 
-    #btn-menu:checked ~ .icon-menu span:nth-child(1) { transform: rotate(45deg) translate(8px, 6px); }
-    #btn-menu:checked ~ .icon-menu span:nth-child(2) { opacity: 0; }
-    #btn-menu:checked ~ .icon-menu span:nth-child(3) { transform: rotate(-45deg) translate(8px, -6px); }
+    #btn-menu:checked~.icon-menu span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 6px);
+    }
+
+    #btn-menu:checked~.icon-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #btn-menu:checked~.icon-menu span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -6px);
+    }
+}
+
+/* Segundo rango Rango */
+@media (min-width: 941px) and (max-width: 1140px) {
+    header nav {
+        a {
+            margin-left: 10px;
+            padding: 10px;
+        }
+    }
+    
+
 }

@@ -2,12 +2,34 @@
 /* Contenido Pie de pagina-footer */
 /* Primer Rango */
 @media (max-width: 600px) {
-/* PIE DE PAGINA */
-/* Sección Proyectos y ubicaciones de sedes */
+    /* PIE DE PAGINA */
+    /* Sección Proyectos y ubicaciones de sedes */
 
-.locationsProyects {
-    /* container principal seccion proyectos y ubiicaciones */
-    grid-template-columns: 1fr 1fr;
-    padding-left: 20px;
+    .locationsProyects {
+        /* container principal seccion proyectos y ubiicaciones */
+        grid-template-columns: 1fr 1fr;
+        padding-left: 20px;
+    }
 }
+
+/* Segundo Rngo */
+/* justes de separacion laterales para pantallas grandes */
+@media (min-width: 1600px) {
+
+    .locationsProyects,
+    .conoceMas {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* Tercer Rango  */
+/* ajuste separacion de laterales en pantallas extragrandes */
+@media (min-width: 3600px) {
+
+    .locationsProyects,
+    .conoceMas {
+        padding-left: 20%;
+        padding-right: 15%;
+    }
 }

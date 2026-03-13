@@ -2,15 +2,11 @@
 /* Contenido Inicio */
 /* Primer Rango */
 
-@media (max-width: 600px) {
+@media (max-width: 611px) {
 
     /* SECCIÓN "HERO" */
 
     .textContenidoHero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -59,4 +55,81 @@
 .contenidoImagen {
     margin-top: 20px;
 }
+}
+
+/* segundo Rango  */
+@media (min-width: 612px) and (max-width: 856px){
+    /* SECCIÓN "HERO" */
+
+    .textContenidoHero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+.tituloContenidoHero{
+    margin-top: 20px;
+}
+
+.fraseDescriptivaContenidoHero {
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+/* SECCIÓN SERVICIOS */
+.encabezadoServicios {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* contenido Servicios */
+
+.serviciosprincipales {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.serviciosprincipales div:last-child{
+    /* es para aplicar al ultmino div d el aprimera seccion */
+    grid-column: 1 /span 2;
+}
+
+.serviciosSecundarios {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* SECCIÓN DESCRIPCIÓN EMPRESA */
+.contenidoDescripcionEmpresa {
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenidoImagen {
+    margin-top: 20px;
+}
+}
+ /* Tercer Rango  */
+ /* ajuste separacion de laterales en pantallas grandes */
+@media (min-width: 1600px){
+    .serviciosprincipales,
+    .serviciosSecundarios, 
+    .contenidoDescripcionEmpresa{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* Cuarto Rango  */
+ /* ajuste separacion de laterales en pantallas extragrandes */
+@media (min-width: 3600px){
+    .serviciosprincipales,
+    .serviciosSecundarios, 
+    .contenidoDescripcionEmpresa{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
